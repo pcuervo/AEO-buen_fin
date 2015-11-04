@@ -6606,7 +6606,9 @@ button.close {
   margin-bottom: 20px;
 }
 .box {
+  width: 100%;
   border: 1px solid gray;
+  padding: 30px;
 }
 .box-small {
   border: 1px solid gray;
@@ -6615,9 +6617,7 @@ button.close {
   width: 130px;
   position: absolute;
   bottom: 10px;
-  margin-left: 10px;
 }
-.box,
 .size-extrasmall,
 .size-small,
 .size-smaller,
@@ -6647,6 +6647,14 @@ button.close {
 }
 .size-extralarge {
   height: 650px;
+}
+.img {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.img1 {
+  background-image: url('../../img/pink.jpg');
 }
 @-ms-viewport {
   width: device-width;

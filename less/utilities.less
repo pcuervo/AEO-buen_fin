@@ -62,7 +62,11 @@
 
 //Box
 
-.box{ border: 1px solid gray; }
+.box{ 
+  width: 100%;
+  border: 1px solid gray; 
+  padding: 30px;
+}
 
 .box-small{
   border: 1px solid gray;
@@ -71,13 +75,11 @@
   width: 130px;
   position: absolute;
   bottom: 10px;
-  margin-left: 10px;
 }
 
 
 // size 
-
-.box, 
+ 
 .size-extrasmall, 
 .size-small, 
 .size-smaller, 
@@ -99,3 +101,13 @@
 .size-larger{ height: 480px; }
 
 .size-extralarge{ height: 650px; }
+
+.img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.img1{
+  background-image: url('../../img/pink.jpg');
+}

@@ -6625,7 +6625,9 @@ button.close {
 .size-large,
 .size-larger,
 .size-extralarge {
-  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 .size-extrasmall {
   height: 150px;
@@ -6647,11 +6649,6 @@ button.close {
 }
 .size-extralarge {
   height: 650px;
-}
-.img {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 50%;
 }
 .img1 {
   background-image: url('../../img/pink.jpg');

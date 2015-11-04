@@ -1134,8 +1134,8 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.42857143;
+  margin-bottom: 1.42857143;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -1516,6 +1516,9 @@ address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 1.42857143;
+}
+.fz-medium {
+  font-size: 20px;
 }
 code,
 kbd,
@@ -2739,7 +2742,7 @@ fieldset[disabled] .checkbox label {
 }
 .input-sm {
   height: 30px;
-  padding: 5px 10px;
+  padding: 5px 30px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
@@ -2754,7 +2757,7 @@ select[multiple].input-sm {
 }
 .form-group-sm .form-control {
   height: 30px;
-  padding: 5px 10px;
+  padding: 5px 30px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
@@ -2770,7 +2773,7 @@ select[multiple].input-sm {
 .form-group-sm .form-control-static {
   height: 30px;
   min-height: 32px;
-  padding: 6px 10px;
+  padding: 6px 30px;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -3527,7 +3530,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-sm,
 .btn-group-sm > .btn {
-  padding: 5px 10px;
+  padding: 5px 30px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
@@ -3938,7 +3941,7 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   height: 30px;
-  padding: 5px 10px;
+  padding: 5px 30px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
@@ -3985,7 +3988,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 4px;
 }
 .input-group-addon.input-sm {
-  padding: 5px 10px;
+  padding: 5px 30px;
   font-size: 12px;
   border-radius: 3px;
 }
@@ -4865,7 +4868,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination-sm > li > a,
 .pagination-sm > li > span {
-  padding: 5px 10px;
+  padding: 5px 30px;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -6605,32 +6608,83 @@ button.close {
 .margin-bottom {
   margin-bottom: 20px;
 }
-.box {
-  width: 100%;
-  border: 1px solid gray;
+.padding-top {
+  padding-top: 30px;
+}
+.padding-bottom {
+  padding-bottom: 30px;
+}
+.padding {
   padding: 30px;
 }
+.box {
+  width: 100%;
+  padding: 10px;
+}
 .box-small {
-  border: 1px solid gray;
   text-align: center;
-  padding: 5px;
   width: 130px;
   position: absolute;
   bottom: 10px;
 }
-.size-extrasmall,
-.size-small,
-.size-smaller,
-.size-medium,
-.size-large,
-.size-larger,
-.size-extralarge {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 50%;
+.position-bottom {
+  bottom: 20px;
+}
+.box-large {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.border-primary,
+.border-secundary,
+.border-dark,
+.border-light {
+  border-radius: 0px;
+}
+.border-primary {
+  border: 1px solid #b31c27;
+}
+.border-primary-strong {
+  border: 2px solid #b31c27;
+}
+.border-secundary {
+  border: 1px solid #000e2b;
+}
+.border-dark {
+  border: 1px solid #111111;
+}
+.border-light {
+  border: 1px solid #ffffff;
+}
+.bg-primary {
+  background-color: #b31c27;
+}
+.bg-secundary {
+  background-color: #000e2b;
+}
+.bg-tertiary {
+  background-color: #4099ff;
+}
+.bg-quaternary {
+  background-color: #bda583;
+}
+.color-light {
+  color: #ffffff;
+}
+.color-primary {
+  color: #b31c27;
+}
+.color-secundary {
+  color: #000e2b;
+}
+.color-dark {
+  color: #111111;
 }
 .size-extrasmall {
   height: 150px;
+}
+.size-smalla {
+  height: 228px;
 }
 .size-small {
   height: 230px;
@@ -6650,8 +6704,16 @@ button.close {
 .size-extralarge {
   height: 650px;
 }
-.img1 {
-  background-image: url('../../img/pink.jpg');
+.size-extrasmall,
+.size-small,
+.size-smaller,
+.size-medium,
+.size-large,
+.size-larger,
+.size-extralarge {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 @-ms-viewport {
   width: device-width;
@@ -6862,5 +6924,8 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.img1 {
+  background-image: url('../../img/pink.jpg');
 }
 /*# sourceMappingURL=bootstrap.css.map */

@@ -1526,6 +1526,9 @@ address {
 p {
   font-size: 16px;
 }
+.fz-small {
+  font-size: 10px;
+}
 .fz-medium {
   font-size: 15px;
 }
@@ -6683,7 +6686,7 @@ button.close {
   background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0!important;
 }
 @media (max-width: 768px) {
   .box-shadow {
@@ -6749,14 +6752,6 @@ button.close {
     height: 230px;
   }
 }
-.size-small__box {
-  height: 228px;
-}
-@media (max-width: 1200px) {
-  .size-small__box {
-    height: 258px;
-  }
-}
 .size-small {
   height: 230px;
 }
@@ -6764,6 +6759,9 @@ button.close {
   .size-small {
     height: 260px;
   }
+}
+.size-smaller__box {
+  height: 258px;
 }
 .size-smaller {
   height: 260px;
@@ -6777,9 +6775,15 @@ button.close {
 .size-larger {
   height: 480px;
 }
-.size-extralarge {
-  height: 65vh;
+@media (max-width: 1200px) {
+  .size-larger {
+    height: 540px;
+  }
 }
+.size-extralarge {
+  height: 75vh;
+}
+img,
 .size-extrasmall,
 .size-small,
 .size-smaller,
@@ -6792,6 +6796,7 @@ button.close {
   background-position: center center;
 }
 @media (max-width: 1200px) {
+  img,
   .size-extrasmall,
   .size-small,
   .size-smaller,
@@ -6802,16 +6807,24 @@ button.close {
     margin-bottom: 20px;
   }
 }
-/*.size-extrasmall, 
-.size-small, 
-.size-smaller, 
-.size-medium {
-  @media (max-width: @screen-lg) {
-    height: 350px; 
+img {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  img {
+    height: inherit;
   }
-}*/
+}
 .position-relative {
   position: relative;
+}
+.position-relative__1 {
+  position: relative;
+  z-index: 1;
+}
+.position-relative__2 {
+  position: relative;
+  z-index: 2;
 }
 .position-bottom {
   bottom: 20px;
@@ -6827,6 +6840,9 @@ button.close {
   .margin-bottom {
     margin-bottom: 0px;
   }
+}
+.margin-bottom-medium {
+  margin-bottom: 30px;
 }
 .margin-left {
   margin-left: 10px;
@@ -6848,6 +6864,17 @@ button.close {
 }
 .padding-large {
   padding: 50px;
+}
+.padding-left-large {
+  padding-left: 30%;
+}
+@media (max-width: 1200px) {
+  .padding-left-large {
+    padding-left: 20%;
+  }
+}
+.padding-small {
+  padding: 10px;
 }
 @-ms-viewport {
   width: device-width;

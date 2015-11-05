@@ -309,9 +309,15 @@ address {
 
 //Font size
 
-.fz-medium{ font-size: 20px;}
+.fz-medium{ font-size: 15px;}
+
 .fz-large{ font-size: 20px;}
-.fz-extralarge{ font-size: 50px;}
+
+.fz-extralarge{ font-size: 50px;
+  @media (max-width: @screen-sm) {
+    font-size: 35px;
+  }
+}
 
 
 //Fonts

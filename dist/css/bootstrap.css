@@ -1524,13 +1524,18 @@ address {
   line-height: 20px;
 }
 .fz-medium {
-  font-size: 20px;
+  font-size: 15px;
 }
 .fz-large {
   font-size: 20px;
 }
 .fz-extralarge {
   font-size: 50px;
+}
+@media (max-width: 768px) {
+  .fz-extralarge {
+    font-size: 35px;
+  }
 }
 body {
   font-family: 'Gotham-XLight';
@@ -3088,7 +3093,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
 }
 .btn:active,
@@ -6630,33 +6635,12 @@ button.close {
 .affix {
   position: fixed;
 }
-.margin-bottom {
-  margin-bottom: 20px;
-}
-.margin-left {
-  margin-left: 10px;
-}
-.margin {
-  margin: 30px;
-}
-.padding-top {
-  padding-top: 30px;
-}
-.padding-bottom {
-  padding-bottom: 30px;
-}
-.padding {
-  padding: 30px;
-}
-.padding-top-large {
-  padding-top: 40px;
-}
-.padding-large {
-  padding: 50px;
-}
 .box {
   width: 100%;
   padding: 10px;
+}
+.box .padding-top-small {
+  padding-top: 50px;
 }
 .box-small {
   text-align: center;
@@ -6664,6 +6648,11 @@ button.close {
   position: absolute;
   bottom: 10px;
   font-family: 'Gotham-Thin';
+}
+@media (max-width: 1200px) {
+  .box-small {
+    bottom: 20px;
+  }
 }
 .box-large {
   width: 100%;
@@ -6674,7 +6663,7 @@ button.close {
   width: 25px;
   height: 25px;
   font-size: 10px;
-  padding-right: 5px;
+  padding-left: 7px;
 }
 .border-primary,
 .border-secundary,
@@ -6686,7 +6675,8 @@ button.close {
   border: 1px solid #b31c27;
 }
 .border-primary-strong {
-  border: 2px solid #b31c27;
+  border: 4px solid #b31c27;
+  padding: 2px;
 }
 .border-secundary {
   border: 1px solid #000e2b;
@@ -6722,10 +6712,15 @@ button.close {
   color: #111111;
 }
 .size-extrasmall {
-  height: 150px;
+  height: 170px;
 }
 .size-small__box {
   height: 228px;
+}
+@media (max-width: 1200px) {
+  .size-small__box {
+    height: 348px;
+  }
 }
 .size-small {
   height: 230px;
@@ -6756,12 +6751,65 @@ button.close {
   background-repeat: no-repeat;
   background-position: center center;
 }
+@media (max-width: 1200px) {
+  .size-extrasmall,
+  .size-small,
+  .size-smaller,
+  .size-medium,
+  .size-large,
+  .size-larger,
+  .size-extralarge {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .size-extrasmall,
+  .size-small,
+  .size-smaller,
+  .size-medium {
+    height: 350px;
+  }
+}
 .position-bottom {
   bottom: 20px;
 }
 .position-absolute {
   position: absolute;
   bottom: 0px;
+}
+@media (max-width: 1200px) {
+  .position-absolute {
+    bottom: 65px;
+  }
+}
+.margin-bottom {
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .margin-bottom {
+    margin-bottom: 0px;
+  }
+}
+.margin-left {
+  margin-left: 10px;
+}
+.margin {
+  margin: 30px;
+}
+.padding-top {
+  padding-top: 50px;
+}
+.padding-top-large {
+  padding-top: 40px;
+}
+.padding-bottom {
+  padding-bottom: 30px;
+}
+.padding {
+  padding: 30px;
+}
+.padding-large {
+  padding: 50px;
 }
 @-ms-viewport {
   width: device-width;

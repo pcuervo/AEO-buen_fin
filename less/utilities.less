@@ -55,33 +55,12 @@
 }
 
 
-//Margin
-
-.margin-bottom{ margin-bottom: @margin-small; }
-
-.margin-left { margin-left: @margin-smaller; }
-
-.margin{ margin: @padding-small-horizontal; }
-
-
-//Padding
-
-.padding-top{ padding-top: @padding-small-horizontal;}
-
-.padding-bottom{ padding-bottom: @padding-small-horizontal; }
-
-.padding{ padding: @padding-small-horizontal; }
-
-.padding-top-large{ padding-top: @padding-medium; }
-
-.padding-large{ padding: @padding-large-horizontal; }
-
-
 //Box
 
 .box{ 
   width: 100%;
   padding: 10px;
+  .padding-top-small{ padding-top: @padding-large-horizontal; }
 }
 
 .box-small{
@@ -90,9 +69,10 @@
   position: absolute;
   bottom: 10px;
   font-family:'Gotham-Thin';
+  @media (max-width: @screen-lg) {
+    bottom: 20px;
+  }
 }
-
-
 
 .box-large{
   width: 100%;
@@ -104,8 +84,10 @@
   width: 25px;
   height: 25px;
   font-size: 10px;
-  padding-right: 5px;
+  padding-left: 7px;
 }
+
+
 //Border
 
 .border-primary,
@@ -117,7 +99,10 @@
 
 .border-primary{ border: 1px solid @primary; }
 
-.border-primary-strong{ border: 2px solid @primary; }
+.border-primary-strong{ 
+  border: 4px solid @primary; 
+  padding: 2px; 
+}
 
 .border-secundary{ border: 1px solid @secundary; }
 
@@ -150,9 +135,13 @@
 
 // size 
 
-.size-extrasmall{ height: 150px; }
+.size-extrasmall{ height: 170px; }
 
-.size-small__box{ height: 228px; }
+.size-small__box{ height: 228px; 
+  @media (max-width: @screen-lg) {
+    height: 348px;
+  }
+}
 
 .size-small{ height: 230px; }
 
@@ -177,9 +166,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  //@media (min-width: @screen-sm-min) { font-size: (@font-size-base * 1.5);  }
+
+  @media (max-width: @screen-lg) {
+    margin-bottom: 10px;
+  }
  }
 
+
+.size-extrasmall, 
+.size-small, 
+.size-smaller, 
+.size-medium {
+  @media (max-width: @screen-lg) {
+    height: 350px; 
+  }
+}
 
 //Position
 
@@ -188,4 +189,36 @@
 .position-absolute{
   position: absolute;
   bottom: 0px;
+  @media (max-width: @screen-lg) {
+     bottom: 65px;
+  }
 }
+
+
+//Margin
+
+.margin-bottom{ margin-bottom: @margin-small; 
+    @media (max-width: @screen-lg) {      
+    margin-bottom: 0px;
+  }
+}
+
+.margin-left { margin-left: @margin-smaller; }
+
+.margin{ margin: @padding-small-horizontal; }
+
+
+
+//Padding
+
+.padding-top{ padding-top: @padding-large-horizontal;}
+
+.padding-top-large{ padding-top: @padding-medium; }
+
+.padding-bottom{ padding-bottom: @padding-small-horizontal; }
+
+.padding{ padding: @padding-small-horizontal; }
+
+.padding-large{ padding: @padding-large-horizontal; }
+
+

@@ -1517,8 +1517,26 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+.text-line__large {
+  line-height: 35px;
+}
+.text-line__medium {
+  line-height: 20px;
+}
 .fz-medium {
   font-size: 20px;
+}
+.fz-large {
+  font-size: 20px;
+}
+.fz-extralarge {
+  font-size: 50px;
+}
+body {
+  font-family: 'Gotham-XLight';
+}
+.font-large {
+  font-family: 'GothamRnd-Book';
 }
 code,
 kbd,
@@ -2779,7 +2797,7 @@ select[multiple].input-sm {
 }
 .input-lg {
   height: 46px;
-  padding: 10px 16px;
+  padding: 10px 50px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -2794,7 +2812,7 @@ select[multiple].input-lg {
 }
 .form-group-lg .form-control {
   height: 46px;
-  padding: 10px 16px;
+  padding: 10px 50px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -2810,7 +2828,7 @@ select[multiple].input-lg {
 .form-group-lg .form-control-static {
   height: 46px;
   min-height: 38px;
-  padding: 11px 16px;
+  padding: 11px 50px;
   font-size: 18px;
   line-height: 1.3333333;
 }
@@ -3524,7 +3542,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 10px 16px;
+  padding: 10px 50px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 0px;
@@ -3554,6 +3572,12 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #b31c27;
 }
 .fade {
   opacity: 0;
@@ -3638,7 +3662,7 @@ tbody.collapse.in {
 }
 .dropdown-menu > li > a {
   display: block;
-  padding: 3px 30px;
+  padding: 3px 60px;
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
@@ -3919,7 +3943,7 @@ tbody.collapse.in {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   height: 46px;
-  padding: 10px 16px;
+  padding: 10px 50px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -3994,7 +4018,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 3px;
 }
 .input-group-addon.input-lg {
-  padding: 10px 16px;
+  padding: 10px 50px;
   font-size: 18px;
   border-radius: 6px;
 }
@@ -4853,7 +4877,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 10px 16px;
+  padding: 10px 50px;
   font-size: 18px;
   line-height: 1.3333333;
 }
@@ -6624,6 +6648,12 @@ button.close {
 .padding {
   padding: 30px;
 }
+.padding-top-large {
+  padding-top: 40px;
+}
+.padding-large {
+  padding: 50px;
+}
 .box {
   width: 100%;
   padding: 10px;
@@ -6633,9 +6663,7 @@ button.close {
   width: 130px;
   position: absolute;
   bottom: 10px;
-}
-.position-bottom {
-  bottom: 20px;
+  font-family: 'Gotham-Thin';
 }
 .box-large {
   width: 100%;
@@ -6643,9 +6671,10 @@ button.close {
   padding: 10px;
 }
 .box-extrasmall {
-  width: 50px;
-  height: 50px;
-  padding: 18px;
+  width: 25px;
+  height: 25px;
+  font-size: 10px;
+  padding-right: 5px;
 }
 .border-primary,
 .border-secundary,
@@ -6695,7 +6724,7 @@ button.close {
 .size-extrasmall {
   height: 150px;
 }
-.size-smalla {
+.size-small__box {
   height: 228px;
 }
 .size-small {
@@ -6723,9 +6752,16 @@ button.close {
 .size-large,
 .size-larger,
 .size-extralarge {
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center center;
+}
+.position-bottom {
+  bottom: 20px;
+}
+.position-absolute {
+  position: absolute;
+  bottom: 0px;
 }
 @-ms-viewport {
   width: device-width;
@@ -6939,5 +6975,17 @@ button.close {
 }
 .img1 {
   background-image: url('../../img/pink.jpg');
+}
+@font-face {
+  font-family: Gotham-XLight;
+  src: url('../../fonts/Gotham/Gotham-XLight.otf');
+}
+@font-face {
+  font-family: GothamRnd-Book;
+  src: url('../../fonts/Gotham/GothamRnd-Book.otf');
+}
+@font-face {
+  font-family: Gotham-Thin;
+  src: url('../../fonts/Gotham/Gotham-Thin.otf');
 }
 /*# sourceMappingURL=bootstrap.css.map */

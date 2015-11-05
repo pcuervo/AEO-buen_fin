@@ -72,6 +72,10 @@
 
 .padding{ padding: @padding-small-horizontal; }
 
+.padding-top-large{ padding-top: @padding-medium; }
+
+.padding-large{ padding: @padding-large-horizontal; }
+
 
 //Box
 
@@ -85,9 +89,10 @@
   width: 130px;
   position: absolute;
   bottom: 10px;
+  font-family:'Gotham-Thin';
 }
 
-.position-bottom{ bottom: 20px; }
+
 
 .box-large{
   width: 100%;
@@ -96,9 +101,10 @@
 }
 
 .box-extrasmall{
-  width: 50px;
-  height: 50px;
-  padding: 18px;
+  width: 25px;
+  height: 25px;
+  font-size: 10px;
+  padding-right: 5px;
 }
 //Border
 
@@ -146,7 +152,7 @@
 
 .size-extrasmall{ height: 150px; }
 
-.size-smalla{ height: 228px; }
+.size-small__box{ height: 228px; }
 
 .size-small{ height: 230px; }
 
@@ -168,7 +174,18 @@
 .size-large, 
 .size-larger, 
 .size-extralarge { 
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center center;
+  //@media (min-width: @screen-sm-min) { font-size: (@font-size-base * 1.5);  }
  }
+
+
+//Position
+
+.position-bottom{ bottom: 20px; }
+
+.position-absolute{
+  position: absolute;
+  bottom: 0px;
+}

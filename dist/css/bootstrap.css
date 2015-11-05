@@ -3185,25 +3185,25 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #ffffff;
   background-color: #b31c27;
-  border-color: #9d1922;
+  border-color: #b31c27;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #ffffff;
   background-color: #87151d;
-  border-color: #2f070a;
+  border-color: #450b0f;
 }
 .btn-primary:hover {
   color: #ffffff;
   background-color: #87151d;
-  border-color: #681017;
+  border-color: #7e141b;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
   background-color: #87151d;
-  border-color: #681017;
+  border-color: #7e141b;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3216,7 +3216,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary.focus {
   color: #ffffff;
   background-color: #681017;
-  border-color: #2f070a;
+  border-color: #450b0f;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3242,7 +3242,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #b31c27;
-  border-color: #9d1922;
+  border-color: #b31c27;
 }
 .btn-primary .badge {
   color: #b31c27;
@@ -3522,7 +3522,7 @@ fieldset[disabled] .btn-danger.active {
 .btn-link.active,
 .btn-link[disabled],
 fieldset[disabled] .btn-link {
-  background-color: transparent;
+  background-color: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -3530,19 +3530,19 @@ fieldset[disabled] .btn-link {
 .btn-link:hover,
 .btn-link:focus,
 .btn-link:active {
-  border-color: transparent;
+  border-color: none;
 }
 .btn-link:hover,
 .btn-link:focus {
   color: #23527c;
   text-decoration: underline;
-  background-color: transparent;
+  background-color: none;
 }
 .btn-link[disabled]:hover,
 fieldset[disabled] .btn-link:hover,
 .btn-link[disabled]:focus,
 fieldset[disabled] .btn-link:focus {
-  color: #777777;
+  color: #ffffff;
   text-decoration: none;
 }
 .btn-lg,
@@ -6664,6 +6664,13 @@ button.close {
   height: 25px;
   font-size: 10px;
   padding-left: 7px;
+  margin-left: 4px;
+}
+.box-shadow {
+  width: 100vw;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
 }
 .border-primary,
 .border-secundary,
@@ -6776,11 +6783,6 @@ button.close {
 .position-absolute {
   position: absolute;
   bottom: 0px;
-}
-@media (max-width: 1200px) {
-  .position-absolute {
-    bottom: 65px;
-  }
 }
 .margin-bottom {
   margin-bottom: 20px;

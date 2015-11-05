@@ -102,26 +102,26 @@
   &.active,
   &[disabled],
   fieldset[disabled] & {
-    background-color: transparent;
+    background-color: none;
     .box-shadow(none);
   }
   &,
   &:hover,
   &:focus,
   &:active {
-    border-color: transparent;
+    border-color: none;
   }
   &:hover,
   &:focus {
     color: @link-hover-color;
     text-decoration: @link-hover-decoration;
-    background-color: transparent;
+    background-color: none;
   }
   &[disabled],
   fieldset[disabled] & {
     &:hover,
     &:focus {
-      color: @btn-link-disabled-color;
+      color: @light;
       text-decoration: none;
     }
   }

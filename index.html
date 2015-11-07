@@ -6,44 +6,34 @@
 		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
 
 		<link rel="stylesheet" type="text/css" href="dist/css/main.css">
-		<link rel="stylesheet" href="dist/js/packery.js">
-		<link rel="stylesheet" href="dist/js/packery-docs.min.js">
 
 
 		<title>AEO</title>
 
 	</head>
 	<body>
-		<header class="[ position-relative__1 ]">
-			<div class="[ box-shadow ]">
-				<div class="[ text-right ]">
-					<a href=""><div class="[ btn ][ box-extrasmall ][ bg-primary ][ color-light ][ pull-right  ]">C</div></a>
-					<a href=""><div class="[ btn ][ box-extrasmall ][ bg-primary ][ color-light ][ pull-right  ]">B</div></a>
-					<a href=""><div class="[ btn ][ box-extrasmall ][ bg-primary ][ color-light ][ pull-right  ]">A</div></a>
-				</div>
-			</div>
+		<header class="[ z-index-1 ][ box-shadow ][ text-center ]">
+			<a href="" class="[ btn ][ box-extrasmall ][ bg-primary ][ color-light ][ pull-right ]">C</a>
+			<a href="" class="[ btn ][ box-extrasmall ][ bg-primary ][ color-light ][ pull-right ]">B</a>
+			<a href="" class="[ btn ][ box-extrasmall ][ bg-primary ][ color-light ][ pull-right ]">A</a>
+			<div class="[ position-relative ][ z-index-2 ][ dropdown ][ box-primary ][ text-center text-uppercase color-light ][ padding ][ bg-primary ]">
+				<span class="[ glyphicon glyphicon-dashboard ][ dropdown-toggle ]" data-toggle="dropdown"></span>
+				Menú
+				<span class="[ glyphicon glyphicon-dashboard ][ fz-extralarge ]"></span>
+				<hr>
+				<ul class="[ dropdown-menu ][ text-uppercase ][ color-light ][ bg-primary ][ text-center ]" role="menu">
+					<li><a href="#">Wearables</a></li>
+					<li><a href="#">Influencers</a></li>
+					<li><a href="#">Keep it cool</a></li>
+					<li><a href="#">Encuentra <p>tu tienda</p></a></li>
+				</ul>
+			</div>	
 		</header>		
 		<section class="[ margin-bottom ]">			
 			<div class="[ row ]">
 				<div class="[ col-xs-13]">
 					<div class="[ size-extralarge ][ img1 ][ position-relative ]">	
-						<div class="[ position-relative__2 ]">
-							<div class="[ btn-group ]">
-								<div class="[ text-uppercase ][ color-light ][ padding ][ btn ][ btn-primary ][ dropdown-toggle ]" data-toggle="dropdown">
-									<span class="[ glyphicon glyphicon-dashboard ]"></span>
-									Menú
-									<span class="[ glyphicon glyphicon-dashboard ][ fz-extralarge ]"></span>
-									<hr>
-								</div>
-								<ul class="[ dropdown-menu ][ text-uppercase ][ color-light ][ bg-primary ][ text-center ]" role="menu">
-									<li><a href="#">Wearables</a></li>
-									<li><a href="#">Influencers</a></li>
-									<li><a href="#">Keep it cool</a></li>
-									<li><a href="#">Encuentra <p>tu tienda</p></a></li>
-								</ul>
-							</div>
-						</div>							
-						<div class="[ position-absolute ][ padding-large ][ text-uppercase ][ color-primary ]">
+						<article class="[ position-absolute ][ bottom-0 ][ padding-large ][ text-uppercase ][ color-primary ]">
 							<div class="[ text-center ]">
 								<div class="[ fz-extralarge ][ text-line__large ]">
 									<p>America´s</p>
@@ -58,7 +48,27 @@
 									<p>outfitter</p>
 								</div>	
 							</div>													
-						</div>
+						</article>
+						<!--<article class="[ position-absolute ][ bg-primary ][ height-100 ][ width-100 ]">	
+							<div class="[ btn ][ glyphicon glyphicon-remove-circle ][ fz-large ][ position-absolute ][top-0 rigth-20 ]"></div>
+							<div class="[ text-center ]">
+								<img class="[ margin-top ][ widht-xs height-xs ]" src="img/logo-1.png">
+								<p class="[ fz-extralarge ]">CUPÓN</p>
+								<span class="[ margin ]">
+									<button class="[ btn btn-default ]" data-toggle="modal" data-target="#si">SÍ</button>
+								</span>
+								<span class="[ margin ]">
+									<button class="[ btn btn-default ]">NO</button>
+								</span>	
+							</div>													
+						</article>	-->
+						<!--<article class="[ position-absolute ][ bg-opacity ][ height-100 ][ width-100 ][ padding-top-medium ]">
+								<div class="[ position-relative ][ margin-left-small ][ bg-light ][ width-80 ][ padding ]">
+									<div class="[ btn ][ glyphicon glyphicon-remove-circle ][ fz-large ][ text-light ][ position-absolute ][ top--30 rigth-20 ]"></div>
+									<p><strong>CORREO</strong></p>
+									<input type="email" class="[ form-control ]" id="ejemplo_email_1" placeholder="@">
+								</div>
+						</article>	-->	
 					</div>
 				</div>
 			</div>
@@ -78,7 +88,7 @@
 				</div>
 				<div class="[ visible-xs ][ margin-bottom ]"></div>
 				<div class="[ col-xs-13 col-lg-6 ]">
-					<img class="[ height-img ][ embed-responsive-item ]" src="img/original.gif">
+					<img class="[ gif ][ height-img ][ embed-responsive-item ]" src="img/original.gif">
 				</div>
 			</div>			
 		</section>
@@ -334,10 +344,22 @@
 					<div class="[ col-xs-13 col-lg-3 ]">
 						<div class="[ size-larger ][ embed-responsive embed-responsive-16by9 ]">
 							<iframe class="[ embed-responsive-item ]" src="https://www.youtube.com/embed/nug1pMke-y4"></iframe>
-						</div>							
+						</div>	
+						
+
+						<!-- <div class="[ visible-xs ][ margin-bottom ]"></div>
+					<div class="[ col-xs-13 col-lg-3 ][ size-larger ][ position-relative ]">
+						<video class="[ embed-responsive embed-responsive-16by9 ]" controls>
+							<source class="[ embed-responsive-item ]" src="movie.mp4" type="video/mp4">
+						</video>
+					</div> 
+
+<video width="320" height="240" controls>
+							<source src="movie.mp4" type="video/mp4">
+							<source src="movie.ogg" type="video/ogg">
+						</video>
+					-->						
                   	</div>
-					</div>
-					<!-- <div class="[ margin-bottom__small ]"></div> -->
 					<div class="[ col-xs-13 col-lg-4 ]">
 						<div class="[ size-small ][ img1 ]"></div>
 						<div class="[ margin-bottom ]"></div>
@@ -346,24 +368,82 @@
 				</div>			
 			</div>			
 		</section>
-		<section>
-			-----------------------
-		</section>
+		<!-- <section>
+			<div class="bh-sl-container">
+				<div class="bh-sl-form-container">
+					<form id="bh-sl-user-location" method="post" action="#">
+						<div class="bh-sl-filters-container">
+							<ul id="city-filter" class="bh-sl-filters">
+								<li><h3>Ciudades</h3></li>
+								<li>
+									<select name="city" id="city">
+										<option value="">Todas</option>
+										<option value="León">León</option>
+										<option value="Querétaro">Querétaro</option>
+										<option value="Distrito Federal">Distrito Federal</option>
+										<option value="Culiacán">Culiacán</option>
+										<option value="Guadalajara">Guadalajara</option>
+										<option value="Zapopan">Zapopan</option>
+										<option value="Mazatlán">Mazatlán</option>
+										<option value="Monterrey">Monterrey</option>
+										<option value="Puebla">Puebla</option>
+										<option value="Toluca de Lerdo">Toluca de Lerdo</option>
+										<option value="Lerma">Lerma</option>
+										<option value="Boca del Río">Boca del Río</option>
+										<option value="Cuautitlan Izcalli">Cuautitlan Izcalli</option>
+										<option value="Playa del Carmen">Playa del Carmen</option>
+										<option value="Naucalpan de Juárez">Naucalpan de Juárez</option>
+									</select>
+								</li>
+							</ul>
+							<ul id="plaza-filters-container1" class="bh-sl-filters">
+								<li><h3>Plazas</h3></li>
+								<li>
+									<select name="plaza" id="plaza">
+										<option value="">Todas</option>
+										<option value="ACOXPA">ACOXPA</option>
+										<option value="ALTACIA">ALTACIA</option>
+										<option value="ANTEA QUERÉTARO">ANTEA QUERÉTARO</option>
+										<option value="CENTRO COMERCIAL PERISUR">CENTRO COMERCIAL PERISUR</option>
+										<option value="FÓRUM BUENAVISTA">FÓRUM BUENAVISTA</option>
+										<option value="FÓRUM CULIACÁN">FÓRUM CULIACÁN</option>
+										<option value="FÓRUM TLAQUEPAQUE">FÓRUM TLAQUEPAQUE</option>
+										<option value="GALERÍAS GUADALAJARA">GALERÍAS GUADALAJARA</option>
+										<option value="GALERÍAS MAZATLÁN">GALERÍAS MAZATLÁN</option>
+										<option value="GALERÍAS MONTERREY">GALERÍAS MONTERREY</option>
+										<option value="GALERÍAS SERDÁN">GALERÍAS SERDÁN</option>
+										<option value="GALERÍAS TOLUCA">GALERÍAS TOLUCA</option>
+										<option value="GRAN PLAZA">GRAN PLAZA</option>
+										<option value="OUTLET LERMA">OUTLET LERMA</option>
+										<option value="PLAZA ANDAMAR">PLAZA ANDAMAR</option>
+										<option value="PUNTA NORTE">PUNTA NORTE</option>
+										<option value="QUINTA ALEGRÍA">QUINTA ALEGRÍA</option>
+										<option value="SANTA FE">SANTA FE</option>
+										<option value="TOREO PARQUE CENTRAL">TOREO PARQUE CENTRAL</option>
+									</select>
+								</li>
+							</ul>
+							<button id="bh-sl-submit" type="submit">BUSCAR</button>
+						</div>
+					</form>
+				</div>
+
+				<div id="map-container" class="bh-sl-map-container">
+					<div class="bh-sl-loc-list">
+						<ul class="list"></ul>
+					</div>
+					<div id="bh-sl-map" class="bh-sl-map"></div>
+				</div>
+			</div>
+		</section> -->
 		<footer class="[ bg-secundary ][ color-light ][ text-uppercase ][ padding-small ]">
 			<div class="[ padding-left-large ]">
 				<p class="[ fz-small ]">Políticas de privacidad</p>
 				<p class="[ fz-small ]"><span class="[ glyphicon glyphicon-copyright-mark ]"></span> 2015 aeo management co. todos los derechos reservados.</p>
-				<div>
-					<span class="[ glyphicon glyphicon-copyright-mark ]"></span>
-					<span class="[ glyphicon glyphicon-copyright-mark ]"></span>
-					<span class="[ glyphicon glyphicon-copyright-mark ]"></span>
-					<span class="[ glyphicon glyphicon-copyright-mark ]"></span>
-					<span class="[ glyphicon glyphicon-copyright-mark ]"></span>
-					<span class="[ glyphicon glyphicon-copyright-mark ]"></span>
-					<span class="[ glyphicon glyphicon-copyright-mark ]"></span>
-				</div>
+				<img class="[ width-small ]" src="img/logos.png">
 			</div>			
 		</footer>
+
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -372,6 +452,8 @@
 		<script>
 			$('#send_btn').popover({content: 'Thank You'},'click');
 		</script>
+
+		
 
 	</body>
 </html>
